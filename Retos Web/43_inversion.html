@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        //Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión cada año que dura la inversión.
+
+        let cant = prompt("ingrese la cantidad a invertir");
+        let interes = prompt("Ingrese el interes anual en porcentaje");
+        let anios = prompt("Ingrese el tiempo de inversion en anios");
+        let cantotal;
+
+        
+
+        let intFinal = ((cant/100)*interes);
+        
+        console.log(intFinal);
+
+        for (i=1;i<=anios;i++){
+            let cantotal = (intFinal*anios)  //<-- cant lo interpreta como una cadena?
+            cant = cant + cantotal
+            console.log(cant)
+            //console.log("En el año " + i + " El capital total de retorno es de: " + cant);
+        }
+
+        </script>
+    </body>
+</html>

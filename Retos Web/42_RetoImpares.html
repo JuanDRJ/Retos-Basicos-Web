@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
+
+            let num ;
+            impar = 1;
+
+            do {
+                num = prompt("Ingrese un numero entero positivo")
+               } while (num < 0 && num %1 < 0){
+                   
+               }
+               
+            while (impar<num){
+                impar = impar+2
+                console.log(impar);
+                if(impar == num-1){
+                    break;
+                }
+            }
+
+        </script>
+    </body>
+</html>
